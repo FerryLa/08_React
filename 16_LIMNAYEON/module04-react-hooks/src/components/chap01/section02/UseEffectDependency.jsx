@@ -15,10 +15,32 @@
 */
 import { useState, useEffect } from "react";
 
-function UseEffectDependency(){
+function UseEffectDependency() {
+  const [text, setText] = useState("");
+  const [count, setCount] = useState(0);
 
-  return(
-    <div>check</div>
-  )
+  useEffect(() => {
+    console.log(`text값이 변경되었습니다. : ${text}`);
+  }, [text]); // text의 값이 변경될 때만 effect를 실행행
+
+  const handleClick = () => {
+    console.log(`count값이 변경되었습니다. : ${count}`);
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <h2>useEffect 의존성 배열</h2>
+      <p>현재 카운드 {count}</p>
+      <button onClick={handleClick}>증가</button>
+      <hr />
+      <input
+        type="text"
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+      />
+      <p>현재 텍스트: {text}</p>
+    </div>
+  );
 }
 export default UseEffectDependency;
