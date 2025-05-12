@@ -26,6 +26,9 @@ export default function Home() {
         <li>
           <Link href="/chap02/section01">UseLayoutEffect</Link>
         </li>
+        <li>
+          <Link href="/chap02/section02">DomMeasure</Link>
+        </li>
       </ul>
     </>
   );
