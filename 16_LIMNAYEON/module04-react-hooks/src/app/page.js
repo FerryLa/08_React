@@ -30,6 +30,8 @@ export default function Home() {
           <Link href="/chap02/section02">DomMeasure</Link>
         </li>
       </ul>
+
+      
     </>
   );
 }
