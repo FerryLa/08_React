@@ -40,6 +40,16 @@ export default function Home() {
           <Link href="/chap03/section02">UseRefValueKeep</Link>
         </li>
       </ul>
+
+      <h3>chap04</h3>
+      <ul>
+        <li>
+          <Link href="/chap04/section01">UseMemoExample</Link>
+        </li>
+        <li>
+          <Link href="/chap04/section02">UseCallback</Link>
+        </li>
+      </ul>
     </>
   );
 }
