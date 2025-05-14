@@ -19,6 +19,30 @@ export default function Home() {
       </ul>
 
       <hr />
+
+      <h1>State</h1>
+      <ul>
+        <li>
+          <Link href={"/chap02/section01"}>State</Link>
+        </li>
+        <li>
+          <Link href={"/chap02/section02"}>Child Update Parent State</Link>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h1>Controlled Component</h1>
+      <ul>
+        <li>
+          <Link href={"/chap03/section01/"}>Single Input</Link>
+        </li>
+        <li>
+          <Link href={"/chap03/section02/"}>Multi Input</Link>
+        </li>
+      </ul>
+
+      <hr />
     </div>
   );
 }

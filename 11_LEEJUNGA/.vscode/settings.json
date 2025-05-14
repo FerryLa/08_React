@@ -1,0 +1,7 @@
+{
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 120,
+  "diffEditor.wordWrap": "on",
+  "editor.rulers": [120]
+  // "editor.formatOnSave": false // 자동 포맷 끄기 (테스트용)
+}

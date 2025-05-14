@@ -1,0 +1,34 @@
+"use client";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+
+// useRef() : DOM요소에 접글할때 사용하는 Hook
+export default function DomMeasure() {
+  // 1. useRef()로 DOM요소에 접근한다.
+  // 2. useLayoutEffect()로 요소의 크기를 읽는다.
+  // 3. 필요한 경우 setState를 통해 상태를 업데이트 한다.
+
+  const boxRef = useRef(null); // 측정할 DOM요소를 참조
+  const [width, setWidth] = useState(0); // 측정한 width 값을 저장할 상태
+
+  useEffect(() => {
+    // useLayoutEffect(() => {
+    if (boxRef.current) {
+      const boxWidth = boxRef.current.offsetWidth; // DOM의 offsetWidth를 읽어옴
+      setWidth(boxWidth);
+    }
+  }, []);
+
+  return (
+    <div className="flex flex-col justify-center items-center">
+      <h2>DOM 크기 측정 예제</h2>
+      <div
+        className="  text-gray-800"
+        ref={boxRef}
+        style={{ width: "50%", height: "100px", backgroundColor: "lightblue" }}
+      >
+        측정할 박스
+      </div>
+      <p>box의 너비 : {width}px</p>
+    </div>
+  );
+}
