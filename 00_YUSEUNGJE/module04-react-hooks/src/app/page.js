@@ -36,6 +36,19 @@ export default function Home() {
         <li>
           <Link href='/chap03/section01'>UseRefDomAccess</Link>
         </li>
+        <li>
+          <Link href='/chap03/section02'>UseRefValuekeep</Link>
+        </li>
+      </ul>
+
+      <h3>chap04</h3>
+      <ul>
+        <li>
+          <Link href='/chap04/section01'>UseMemoExample</Link>
+        </li>
+        <li>
+          <Link href='/chap04/section02'>UseCallback</Link>
+        </li>
       </ul>
     </>
   );
