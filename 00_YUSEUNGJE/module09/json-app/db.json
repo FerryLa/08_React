@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 15",
+      "price": 1500000,
+      "stock": 10
+    },
+    {
+      "id": "2",
+      "name": "Galaxy S24",
+      "price": 1300000,
+      "stock": 15
+    },
+    {
+      "id": "3",
+      "name": "MacBook Pro",
+      "price": 3000000,
+      "stock": 5
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "productId": 1,
+      "quantity": 2,
+      "status": "pending"
+    },
+    {
+      "id": "2",
+      "productId": 2,
+      "quantity": 1,
+      "status": "shipped"
+    },
+    {
+      "id": "d206",
+      "productId": "2",
+      "quantity": 1,
+      "status": "pending"
+    },
+    {
+      "id": "9f82",
+      "productId": "3",
+      "quantity": 1,
+      "status": "pending"
+    },
+    {
+      "id": "4a36",
+      "productId": "1",
+      "quantity": 1,
+      "status": "pending"
+    },
+    {
+      "id": "9222",
+      "productId": "1",
+      "quantity": 1,
+      "status": "pending"
+    },
+    {
+      "id": "fc9e",
+      "productId": "2",
+      "quantity": 1,
+      "status": "pending"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "role": "admin",
+      "email": "admin@example.com"
+    },
+    {
+      "id": "2",
+      "name": "Alice",
+      "role": "user",
+      "email": "alice@example.com"
+    }
+  ],
+  "carts": [
+    {
+      "id": "1",
+      "userId": 2,
+      "productId": 3,
+      "quantity": 1
+    }
+  ]
+}
