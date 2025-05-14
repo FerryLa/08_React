@@ -20,6 +20,8 @@
  * 따라서 `/nested/123` 경로로 접근했다면 `id` 변수에는 '123'이라는 문자열이 할당되어 해당 상품 정보를 보여주는 데 사용된다.
  */
 
+import { notFound } from "next/navigation";
+
 export default async function ProductDetailPage({ params }) {
   const { id } = await params;
 
